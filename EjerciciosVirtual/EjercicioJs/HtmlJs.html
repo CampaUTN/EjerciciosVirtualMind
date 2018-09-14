@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Remove items from a dropdown list</title>
+</head>
+<body>
+    <form>
+        <select id="colorSelect">
+            <option>Red</option>
+            <option>Green</option>
+            <option>White</option>
+            <option>Black</option>
+        </select>
+        <input type="button" onclick="removecolor()" value="Select and Remove">
+    </form>
+    <br />
+    <br />
+    <hr />
+    <table id="sampleTable" border="1">
+        <tr>
+            <td>Row1 cell1</td>
+            <td>Row1 cell2</td>
+        </tr>
+        <tr>
+            <td>Row2 cell1</td>
+            <td>Row2 cell2</td>
+        </tr>
+    </table><br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+</body>
+</html>
+<script type="text/javascript">
+    //1
+    function employee(firstName, lastName, salary) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
+
+    employee.prototype.IncreaseSalary = function () {
+        this.salary = this.salary + 1000;
+    };
+
+    employee.prototype.MostrarDetalles = function () {
+        console.log("First Name:" + this.firstName);
+        console.log("Last Name:" + this.lastName);
+        console.log("Salary:" + this.salary);
+    };
+
+    //2
+    function MultiplyBy() {
+        console.log(mul(2)(3)(4));
+        console.log(mul(4)(3)(4));
+    }
+
+    function mul(a) {
+        return function (b) {
+            return function (c) {
+                return a * b * c;
+            };
+        };
+    }
+
+    //3
+    function Longest_Country_Name(paises) {
+        return paises.reduce((a, b) => a.length > b.length ? a : b, '');
+    }
+
+    //4
+    function insert_Row() {
+
+        var sampleTable = document.getElementById('sampleTable');
+
+        var row = sampleTable.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        cell1.innerHTML = "Row" + sampleTable.rows.length + " cell1";
+        cell2.innerHTML = "Row" + sampleTable.rows.length + " cell2";
+    }
+
+    //5
+    function removecolor() {
+        var colorSelect = document.getElementById('colorSelect');
+        var value = colorSelect.selectedIndex;
+
+        if (value != -1) {
+            colorSelect.removeChild(colorSelect[value]);
+        }
+    }
+
+    //6
+    function insert_Row() {
+        var sampleTable = document.getElementById('sampleTable');
+
+        var row = sampleTable.insertRow(-1);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+
+        cell1.innerHTML = "Row" + sampleTable.rows.length + " cell1";
+        cell2.innerHTML = "Row" + sampleTable.rows.length + " cell2";
+    }
+
+</script>

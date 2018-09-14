@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjerciciosVirtual", "EjerciciosVirtual\EjerciciosVirtual.csproj", "{A653EC9F-CA47-4367-8DD4-894B5C63A8FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EjerciciosVirtual.Tests", "EjerciciosVirtual.Tests\EjerciciosVirtual.Tests.csproj", "{E928BEC3-478C-48F6-B07E-E6E54F9033DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A653EC9F-CA47-4367-8DD4-894B5C63A8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A653EC9F-CA47-4367-8DD4-894B5C63A8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A653EC9F-CA47-4367-8DD4-894B5C63A8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A653EC9F-CA47-4367-8DD4-894B5C63A8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E928BEC3-478C-48F6-B07E-E6E54F9033DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E928BEC3-478C-48F6-B07E-E6E54F9033DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E928BEC3-478C-48F6-B07E-E6E54F9033DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E928BEC3-478C-48F6-B07E-E6E54F9033DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
