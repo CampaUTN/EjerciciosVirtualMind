@@ -21,6 +21,7 @@ Se accede de la siguiente manera:
 
 http://localhost:57041/EjerciciosVirtual/Usuarios
 
+IMPORTANTE: El proyecto debe estar ubicado en la carpeta de proyectos de Visual Studio, en el mismo disco de instalacion. Caso contrario puede fallar esta api
 
 3) Test Javascript
 
